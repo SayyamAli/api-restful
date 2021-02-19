@@ -174,11 +174,12 @@ h1.name {
   cursor: pointer;
   color: #04143a;
 }
-
-.date:hover {
+.description{
+    color: #04143a;
+}
+.description:hover {
   color: #48a4d2;
 }
-
 @media (max-width: 1024px) {
   .container {
     padding: 15px;
@@ -211,16 +212,6 @@ h1.name {
     height: auto;
     margin: 10px 0;
     float: left;
-  }
-
-  .timeline {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .timeline li {
-    margin-top: 70px;
-    height: 150px;
   }
 }
 
@@ -263,4 +254,3 @@ h1.name {
   }
 }
 
-/* End of all :P*/
