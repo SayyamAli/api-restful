@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 
 /* Reset Styles */
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,10 +20,6 @@
   padding: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
-}
-.inline {
-  display: flex;
-  margin-left: 30px;
 }
 body {
   line-height: 1;
@@ -47,14 +43,13 @@ p {
 strong {
   font-weight: 600;
 }
-div,
-footer {
+div {
   box-sizing: border-box;
 }
 .container {
   max-width: 1100px;
   height: auto;
-  margin: 60px 30px;
+  margin: 30px 30px;
 }
 table td {
   padding: 17px;
@@ -67,17 +62,17 @@ table tr td:first-child {
   color: gray;
 }
 .hero {
-  margin: 50px auto;
   position: relative;
 }
 h1.name {
   font-size: 70px;
   font-weight: 300;
   display: inline-block;
+  position: relative;
+  margin-left: 15px;
 }
 
 .job-title {
-  vertical-align: top;
   background-color: #d9e7f8;
   color: #4a90e2;
   font-weight: 600;
@@ -87,21 +82,21 @@ h1.name {
   display: inline-block;
   padding: 15px 25px;
 }
-
+.contact-details img {
+  height: 16px;
+  width: 15px;
+  position: relative;
+  padding-right: 6px;
+  margin: -4px;
+}
 .email {
-  display: block;
-  font-size: 24px;
-  font-weight: 300;
-  color: #81899c;
   margin-top: 10px;
 }
 
-.lead {
+.text {
   font-size: 20px;
   font-weight: 300;
-  margin-top: 25px;
-  line-height: 20px;
-  width: 50%;
+  line-height: 23px;
 }
 
 .sections {
@@ -117,7 +112,6 @@ h1.name {
   border-bottom: 1px solid #04143a;
   padding-bottom: 4px;
 }
-
 .list-card {
   margin: 30px 0;
 }
@@ -149,14 +143,7 @@ h1.name {
   line-height: 22px;
 }
 
-.cards {
-  max-width: 1120px;
-  display: block;
-  margin-top: 280px;
-}
-
 .card {
-
   background-color: #eef0f7;
   display: inline-block;
   margin: 7px 5px;
@@ -174,10 +161,13 @@ h1.name {
   cursor: pointer;
   color: #04143a;
 }
-.description{
-    color: #04143a;
+.description {
+  color: #04143a;
 }
 .description:hover {
+  color: #48a4d2;
+}
+table tr td:hover{
   color: #48a4d2;
 }
 @media (max-width: 1024px) {
@@ -189,16 +179,11 @@ h1.name {
     margin-top: 250px;
   }
 }
-
 @media (max-width: 768px) {
   .container {
     padding: 15px;
     margin: 0px auto;
   }
-  .cards {
-    margin-top: 320px;
-  }
-
   .card {
     padding: 15px;
     text-align: left;
@@ -227,11 +212,6 @@ h1.name {
     margin: 10px 0;
     float: left;
   }
-
-  .timeline {
-    display: none;
-  }
-
   .job-title {
     position: absolute;
     font-size: 15px;
@@ -239,8 +219,7 @@ h1.name {
     right: 20px;
     padding: 10px;
   }
-
-  .lead {
+  .text {
     margin-top: 15px;
     font-size: 20px;
     line-height: 28px;
@@ -249,8 +228,40 @@ h1.name {
     margin: 0px;
     padding: 0 15px;
   }
-  footer {
-    margin-top: 2050px;
-  }
 }
-
+.hero img {
+  height: 200px;
+  width: 200px;
+  display: inline;
+  float: left;
+}
+.contact-details {
+  background-color: #d9e7f8;
+  color: #4a90e2;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  display: block;
+  line-height: 30px;
+  border-radius: 5px;
+}
+.aboutme {
+  display: inline-grid;
+  grid-template-areas: "tsection csection csection";
+  grid-gap: 14rem;
+  margin-top: 30px;
+}
+#tsection {
+  grid-area: tsection;
+}
+#csection {
+  grid-area: csection;
+}
+footer{
+  background-color: #d9e7f8;
+  color: #4a90e2;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px 25px;
+  text-align: center;
+}
