@@ -234,6 +234,7 @@ table tr td:hover{
   width: 200px;
   display: inline;
   float: left;
+  border-radius: 150px;
 }
 .contact-details {
   background-color: #d9e7f8;
